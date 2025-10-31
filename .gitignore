@@ -1,0 +1,30 @@
+# Ignora arquivos e pastas do Visual Studio Code
+.vscode/
+
+# Ignora pastas de dependências do PHP (Composer) e do Node.js (NPM/Yarn)
+/vendor/
+/node_modules/
+
+# Ignora arquivos de ambiente que contêm senhas e chaves de API
+# NUNCA envie suas senhas para o Git!
+.env
+.env.local
+.env.*.local
+
+# Ignora arquivos de log
+*.log
+logs/
+
+# Ignora arquivos de sistema do macOS, Windows e Linux
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Ignora backups de banco de dados (dumps)
+*.dump
+*.sql
+*.sqlite
+*.sqlite3
+
+# Ignora o arquivo de conexão do banco de dados
+conexao.php

@@ -1,0 +1,880 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* ------------- Arquivo index.php ------------- */
+
+.main-login {
+    width: 100vw;
+    /*largura ocupa 100% da tela*/
+    height: 100vh;
+    /*altura ocupa 100% da tela */
+    background-color: #c0bfbf;
+    /*cor de fundo*/
+    display: flex;
+    /*flex para que as coisas fiquem lado a lado*/
+    justify-content: center;
+    /*para ficar ajustado no meio do eixo x (horizontal)*/
+    align-items: center;
+    /*para ficar ajustado no meio do eixo y (vertical)*/
+}
+
+.left-login {
+    width: 50vw;
+    /*largura ocupa 50% da tela*/
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*uma coisa em baixo da outra e centralizada mesmo utilizando o display flex*/
+}
+
+
+.left-login>h1 {
+    font-size: 2vw;
+    color: #B03A2E;
+    font-weight: 800;
+}
+
+.left-login-image {
+    width: 35vw;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 60%;
+    /*"card-login" está dentro da "right-login", essa "right-login" tem um tamanho de 50 vw, então o 60% vai ser 60% dos 50vw.*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    /*30px é o espaço entre a borda e a caixa de texto da parte de cima e de baixo na parte do login*/
+    /*35px é o espaço entre a borda e a caixa de texto dos lados direito e esquerdo na parte de login */
+    background: #565657;
+    border-radius: 20px;
+    /*arredondar a borda*/
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+
+.card-login>h1 {
+    color: #B03A2E;
+    font-weight: 800;
+    /*grossura da fonte*/
+    margin: 0;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 12px 0px;
+}
+
+.textfield>input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #d8d3d3;
+    color: #000000de;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    /*remove uma linha branca em volta da caixa de texto*/
+    box-sizing: border-box;
+    /*impede que div "filho" não ultrapasse o tamanho da div "pai"*/
+}
+
+.textfield>label {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.textfield>label>a {
+    color: #eb5050;
+    margin-bottom: 10px;
+}
+
+.textfield>label>a:hover {
+    color: #aa3636;
+}
+
+.textfield>input::placeholder {
+    color: #37373794;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #ffffff;
+    background-color: #B03A2E;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: #782920;
+    transition: background-color 0.3s ease;
+}
+
+
+/* ------------- Arquivo novo_usuario.php ------------- */
+
+.btn-cadastrar {
+    width: 90%;
+    padding: 14px 0px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #ffffff;
+    background-color: #B03A2E;
+    cursor: pointer;
+}
+
+.btn-cadastrar:hover {
+    background-color: #782920;
+    transition: background-color 0.3s ease;
+}
+
+.fundoCadastrar {
+    height: 100%;
+    width: 100%;
+    background-color: #c0bfbf;
+    display: flex;
+    /* Usando flexbox para centralizar o conteúdo */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Garante que ocupe 100% da altura da tela */
+}
+
+.card-cadastrar {
+    width: 50vw;
+    height: 43vw;
+    /* Define a largura do card */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 35px;
+    background: #565657;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.34);
+    /* Sombra suave */
+}
+
+.card-cadastrar h1 {
+    color: #B03A2E;
+    font-weight: 800;
+}
+
+.textfieldCadastrar {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 12px 0px;
+}
+
+.textfieldCadastrar>input, select {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background: #d8d3d3;
+    color: #000000de;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    /*remove uma linha branca em volta da caixa de texto*/
+    box-sizing: border-box;
+    /*impede que div "filho" não ultrapasse o tamanho da div "pai"*/
+}
+
+.textfieldCadastrar>label {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.textfieldCadastrar>label>a {
+    color: #eb5050;
+    margin-bottom: 10px;
+}
+
+.textfieldCadastrar>input::placeholder {
+    color: #37373794;
+}
+
+.navbar-customizada {
+    background-color: #B03A2E;
+}
+
+.cabecalho {
+    background-color: #c0bfbf;
+}
+
+.nav-item>a {
+    color: white;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+
+/* ------------- Navbar ------------- */
+
+.navbar-customizada {
+    background-color: #B03A2E;
+    /* cor de fundo vermelho escuro */
+}
+
+.navbar-customizada .navbar-brand {
+    color: #fff;
+    font-weight: bold;
+    font-size: 17pt;
+}
+
+.navbar-customizada .navbar-brand:hover {
+    color: #b9b9b9;
+    text-decoration: none;
+}
+
+.navbar-customizada .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    margin-right: 14pt;
+}
+
+.navbar-customizada .nav-link:hover, .navbar-customizada .nav-link:focus {
+    color: #b9b9b9;
+    text-decoration: underline;
+}
+
+.navbar-customizada .navbar-toggler {
+    border-color: #fff;
+}
+
+.navbar-customizada .navbar-toggler-icon {
+    filter: invert(1);
+    /* ícone branco */
+}
+
+.navbar-customizada .dropdown-menu {
+    background-color: #B03A2E;
+    border: none;
+}
+
+.navbar-customizada .dropdown-item {
+    color: #fff;
+}
+
+.navbar-customizada .dropdown-item:hover, .navbar-customizada .dropdown-item:focus {
+    background-color: #8B2E25;
+    color: #fff;
+}
+
+#logoutButton {
+    color: #fff;
+    background-color: #B03A2E;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-top: 5px;
+}
+
+#logoutButton:hover {
+    background-color: #8B2E25;
+    color: #fff
+}
+
+
+/* ------------- Arquivo principal.php ------------- */
+
+.btn-principal {
+    padding: 12px 25px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ffffff;
+    background-color: #B03A2E;
+    cursor: pointer;
+    display: inline-block;
+    /* para links comportarem como botões */
+    text-align: center;
+    text-decoration: none;
+    /* tira sublinhado dos links */
+    box-shadow: none;
+    /* remove sombra, se quiser */
+}
+
+.btn-principal-servico {
+    width: 32%;
+    margin-left: 62%;
+}
+
+.btn-principal-agendamento {
+    width: 44%;
+}
+
+.btn-principal:hover {
+    background-color: #782920;
+    transition: background-color 0.3s ease;
+}
+
+.secao-superior, .secao-inferior {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.calendario-container, .agendamento-container, .servicos-info, .tabela-servicos {
+    flex: 1;
+    min-width: 400px;
+}
+
+.agendamento-container, .servicos-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tabela-servicos table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0px;
+    font-size: 12pt;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.tabela-servicos thead tr {
+    background-color: #686868;
+    color: white;
+    text-align: left;
+    font-weight: 600;
+}
+
+.tabela-servicos th, .tabela-servicos td {
+    padding: 11px 20px;
+}
+
+.tabela-servicos thead th:nth-child(1) {
+    width: 24%;
+    /* Serviço */
+}
+
+.tabela-servicos thead th:nth-child(2) {
+    width: 55%;
+    /* Descrição */
+}
+
+.tabela-servicos thead th:nth-child(3) {
+    width: 26%;
+    /* Preço */
+}
+
+.tabela-servicos tbody tr {
+    transition: background-color 0.3s ease;
+    cursor: default;
+}
+
+.tabela-servicos tbody tr td:first-child {
+    font-weight: 600;
+    color: #000000;
+}
+
+.tabela-servicos tbody tr:hover {
+    background-color: #f0d9d9;
+}
+
+.tabela-servicos tbody tr td:first-child {
+    font-weight: 600;
+    color: #B03A2E;
+}
+
+
+/* ------------- Arquivo servicos.php ------------- */
+
+.bordas {
+    padding: 10px 8%;
+}
+
+.btn-tableAcoes {
+    text-align: center;
+    background-color: #B03A2E;
+    color: white;
+    border: none;
+}
+
+.btn-tableAcoes:hover {
+    background-color: #903025;
+    color: white;
+    margin-right: 3px;
+}
+
+/* Define largura mínima para a coluna "Ações" */
+#tabela th:last-child,
+#tabela td:last-child {
+    min-width: 160px;
+}
+
+.tamanho-preco {
+    min-width: 120px;
+}
+
+
+/* ------------- Arquivo editar_servico.php ------------- */
+
+.bordasEditarServico {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-editar {
+    width: 50%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #565657;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.titulo {
+    color: #B03A2E;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+    padding: 15px;
+}
+
+.card-edit>input, .card-edit>textarea, .card-edit>select {
+    width: 600px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #d4d8d3;
+    color: #000000de;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.card-edit>label {
+    color: white;
+}
+
+
+/* ------------- Arquivo consultar_servico.php ------------- */
+
+.titulo-consultar {
+    color: #B03A2E;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+    padding: 5px;
+}
+
+.card-consultar {
+    width: 82vh;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 28px;
+    background: #d4d8d3;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+    color: rgb(44, 44, 44);
+}
+
+.bordasConsultarServico {
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+
+/* ------------- Arquivo novo_agendamento.php ------------- */
+.card-novo-agendamento {
+    width: 50%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #565657;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.fundoProfissional {
+    height: 100%;
+    width: 100%;
+    background-color: #c0bfbf;
+    display: flex;
+    /* Usando flexbox para centralizar o conteúdo */
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+    /* Garante que ocupe 100% da altura da tela */
+}
+
+
+.card-agend>input, .card-agend>select {
+    width: 600px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background: #d4d8d3;
+    color: #000000de;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.card-agend>label {
+    color: white;
+}
+
+
+/* ------------- Arquivo consultar_agendamento.php ------------- */
+.card-consultar-agend {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 30px;
+    background: #565657;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-consult-agend {
+    width: 82vh;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 12px;
+    background: #d4d8d3;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+    color: rgb(44, 44, 44);
+}
+
+/* ------------- Arquivo novo_profissional.php ------------- */
+
+.card-novo-profissional {
+    width: 50vw;
+    height: 36vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #565657;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.34);
+    /* Sombra suave */
+}
+
+.textfieldProfissional {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 8px 0px;
+}
+
+.textfieldProfissional>input, select {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    background: #d8d3d3;
+    color: #000000de;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    /*remove uma linha branca em volta da caixa de texto*/
+    box-sizing: border-box;
+    /*impede que div "filho" não ultrapasse o tamanho da div "pai"*/
+}
+
+.textfieldProfissional>label {
+    color: white;
+    margin-bottom: 6px;
+}
+
+
+.textfieldProfissional>input::placeholder {
+    color: #37373794;
+}
+
+/* ------------- Arquivo consultar_profissional.php ------------- */
+
+.card-consultar-Prof {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 30px;
+    background: #565657;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+
+.card-consult-prof {
+    width: 82vh;
+    height: 16%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 12px;
+    background: #d4d8d3;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+    color: rgb(44, 44, 44);
+}
+
+
+/* ------------- Arquivo alterar_dados.php ------------- */
+.bordas-alterar-dados {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-alterar-dados {
+    display: flex;
+    gap: 20px;
+    /* Espaçamento entre os formulários */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    flex-wrap: wrap;
+    /* Faz com que eles quebrem linha em telas menores */
+}
+
+.card-alterar-dados {
+    width: 90%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #565657;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+
+.card-alt-dados>input {
+    width: 400px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #d4d8d3;
+    color: #000000de;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+
+}
+
+.card-alt-dados>label {
+    color: white;
+    margin-bottom: 6px;
+}
+
+/* ------------- Arquivo relatorio.php ------------- */
+.btn-relatorio {
+    margin: 20px auto 0 auto;
+}
+
+
+
+/*algumas configurações para tamanho de tela diferente*/
+@media only screen and (max-width: 346px) {
+    .card-cadastrar {
+        width: 85% !important;
+        height: 88% !important;
+    }
+
+    .card-cadastrar h1 {
+        font-size: 13pt;
+    }
+
+    .left-login>img {
+        display: none;
+    }
+
+    .textfieldCadastrar>input, select {
+        width: 100%;
+        padding: 4px;
+        font-size: 10pt;
+        border-radius: 8px;
+    }
+
+    .btn-cadastrar {
+        width: 70%;
+        padding: 8px;
+        margin: 6px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .card-cadastrar {
+        width: 95% !important;
+        height: 97% !important;
+    }
+
+    .navbar-brand {
+        font-size: 16pt;
+    }
+
+    .nav-link>a {
+        font-size: 13pt;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .card-cadastrar {
+        height: 85%;
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .card-cadastrar {
+        height: 78%;
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-login {
+        flex-direction: column;
+    }
+
+    .left-login>h1 {
+        display: none;
+    }
+
+    .left-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-login-image {
+        width: 50vw;
+    }
+
+    .card-login {
+        width: 90%;
+    }
+
+    .card-cadastrar {
+        width: 90%;
+    }
+
+    .textfieldCadastrar {
+        width: 70vw;
+    }
+
+    .navbar-brand {
+        font-size: 16pt;
+    }
+
+    .nav-link>a {
+        font-size: 13pt;
+    }
+}
+
+@media only screen and (max-width: 756px) {
+    .card-cadastrar {
+        width: 58% !important;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .card-login {
+        width: 85%;
+    }
+
+    .navbar-brand {
+        font-size: 24pt;
+    }
+
+    .nav-link>a {
+        font-size: 18pt;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .card-cadastrar {
+        height: 94%;
+        width: 55%;
+    }
+
+
+}
