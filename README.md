@@ -1,7 +1,5 @@
 # 🚗 Servix Auto - Agendamento de Oficina
 
-![Status do Projeto](https://img.shields.io/badge/status-concluído-green)
-
 O Servix Auto é um sistema web para gerenciamento de serviços em uma oficina mecânica. Ele permite o cadastro de clientes, profissionais, serviços e, principalmente, o agendamento e consulta desses serviços.
 
 Este projeto foi desenvolvido como um trabalho acadêmico.
