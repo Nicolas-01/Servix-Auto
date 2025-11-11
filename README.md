@@ -24,7 +24,7 @@ Este projeto foi desenvolvido como um trabalho acadêmico.
 ![Screenshot da tela Principal](Image/principal.png)
 ![Screenshot da tela de Serviços](Image/servico.png)
 ![Screenshot da tela de Novo Serviço](Image/novo_servico.png)
-![Screenshot da tela de Agendamentos](Image/login.png)
+![Screenshot da tela de Agendamentos](Image/agendamento.png)
 ![Screenshot da tela de Novo Agendamento](Image/novo_agendamento.png)
 ![Screenshot da tela de Profissionais](Image/profissional.png)
 ![Screenshot da tela de Novo Profissional](Image/novo_profissional.png)
