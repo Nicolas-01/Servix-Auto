@@ -18,3 +18,6 @@ Este projeto foi desenvolvido como um trabalho acadêmico.
 * **MySQL:** Banco de dados para armazenamento dos dados.
 * **HTML5 e CSS3:** Estruturação e estilização das páginas.
 * **SQL:** Linguagem de consulta para o banco de dados.
+
+
+![Screenshot da tela principal do projeto](assets/login.png)
