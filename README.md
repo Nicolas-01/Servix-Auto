@@ -20,4 +20,4 @@ Este projeto foi desenvolvido como um trabalho acadêmico.
 * **SQL:** Linguagem de consulta para o banco de dados.
 
 
-![Screenshot da tela principal do projeto](image/login.png)
+![Screenshot da tela principal do projeto](Image/login.png)
