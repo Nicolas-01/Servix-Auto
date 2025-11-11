@@ -18,3 +18,17 @@ Este projeto foi desenvolvido como um trabalho acadêmico.
 * **MySQL:** Banco de dados para armazenamento dos dados.
 * **HTML5 e CSS3:** Estruturação e estilização das páginas.
 * **SQL:** Linguagem de consulta para o banco de dados.
+
+## 📷 Fotos do Projeto
+![Screenshot da tela de Login](Image/login.png)
+![Screenshot da tela Principal](Image/principal.png)
+![Screenshot da tela de Serviços](Image/servico.png)
+![Screenshot da tela de Novo Serviço](Image/novo_servico.png)
+![Screenshot da tela de Agendamentos](Image/agendamento.png)
+![Screenshot da tela de Novo Agendamento](Image/novo_agendamento.png)
+![Screenshot da tela de Profissionais](Image/profissional.png)
+![Screenshot da tela de Novo Profissional](Image/novo_profissional.png)
+![Screenshot da tela de Clientes](Image/clientes.png)
+![Screenshot da tela de Novo Usuário](Image/novo_usuario.png)
+![Screenshot da tela de Relatórios](Image/relatorio.png)
+![Screenshot da tela de Alteração de Dados](Image/alterar_dados.png)
